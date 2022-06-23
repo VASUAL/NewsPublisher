@@ -1,0 +1,5 @@
+host = smtp.qq.com
+port = 587
+from = 1162604240@qq.com
+user = Wonkey
+pass = 12345678root
