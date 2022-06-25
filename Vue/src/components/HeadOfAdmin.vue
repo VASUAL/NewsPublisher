@@ -1,8 +1,8 @@
 <template>
 
   <div class="divF4">
-    <img src="../assets/photo/logo.png" alt="" style="position: absolute;height: 65%;top: 50%;transform: translate(-50%,-50%);left: 10%;">
-    <p class="p1">后台管理系统</p>
+    <img src="../assets/photo/logo.png" alt="" style="position: absolute;height: 65%;top: 50%;transform: translate(-50%,-50%);left: 14%;">
+    <p class="p1">后台管理</p>
     <!--下拉菜单-->
     <el-dropdown class="el1">
     <span class="el-dropdown-link">
@@ -71,10 +71,10 @@ export default {
   height: 50px;width: 100%;border-bottom: 1.5px #f0f0f0 solid;position: absolute;margin-top: 0;
 }
 .p1{
-  text-decoration: none;position: absolute;left: 26%;top: 50%;transform: translate(-50%, -50%);color: #409eff;font-size: 23px;
+  text-decoration: none;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);color: #409eff;font-size: 23px;
 }
 .el1{
-  position: absolute;transform: translate(-50%,-50%);left: 80%;top: 50%;font-size: 16px;
+  position: absolute;transform: translate(-50%,-50%);left: 86%;top: 50%;font-size: 16px;
 }
 .arrow1{
   position: relative;top: 3px;

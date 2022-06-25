@@ -1,10 +1,9 @@
-package com.newspublisher.commom;
+package com.newspublisher.common;
 /**
  * Author:Wonkey
  * Date:2022.6.14
  * 处理分页插件
  */
-
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
@@ -13,11 +12,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.newspublisher.common")
+@MapperScan("com.newspublisher.mapper")
 public class MybatisPlusConfig{
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor(){
-        MyBatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         return interceptor;
     }

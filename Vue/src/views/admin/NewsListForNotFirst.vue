@@ -18,7 +18,6 @@
         <template #default="scope" >
           <el-button type="text" size="big" @click="this.look(scope.row)">查看</el-button>
           <el-button type="text" size="big" @click="this.edit(scope.row)">修改</el-button>
-          <el-button type="text" size="big" @click="this.first(scope.row)">置顶</el-button>
           <el-button type="text" size="big" @click="this.delete(scope.row)">删除</el-button>
         </template>
       </el-table-column>
@@ -81,16 +80,6 @@
     </template>
   </el-dialog>
 
-  <!--置顶新闻弹窗，点击置顶时才显示-->
-  <el-dialog v-model="dialogFormVisibleForFirst" title="置顶新闻">
-    <span>是否确认置顶该新闻？</span>
-    <template #footer>
-      <span class="dialog-footer">
-        <el-button @click="dialogFormVisibleForFirst = false">取消</el-button>
-        <el-button type="primary" @click="conformFirst()">确定</el-button>
-      </span>
-    </template>
-  </el-dialog>
 
 </template>
 
@@ -252,22 +241,6 @@ export default {
         })
       }
     },
-    //置顶新闻
-    first(row) {
-      rowForUpdate = row
-      this.dialogFormVisibleForFirst = true
-    },
-    //确认置顶
-    conformFirst() {
-      request.post("/news/setNewsFirst",rowForUpdate.id).then(res =>{
-        ElMessage({
-          type: 'success',
-          message: '置顶成功'
-        })
-        this.loadData()
-        this.dialogFormVisibleForFirst = false
-      })
-    },
     //删除新闻
     delete(row) {
       rowForUpdate = row
@@ -283,6 +256,8 @@ export default {
         this.loadData()       //请求后的操作要放到请求的大括号里面，否则异步操作会造成加载时数据没有更新
         this.dialogFormVisibleForDelete = false
       })
+    },
+    download(row){
     }
   }
 }

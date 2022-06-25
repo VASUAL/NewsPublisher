@@ -15,10 +15,10 @@
       <el-form-item label="板块" prop="type">
         <el-select v-model="ruleForm.type" placeholder="请选择板块" class="el1">
           <el-option
-              v-for="item in lists"
-              :key="item.name"
-              :label="item.name"
-              :value="item.name">
+          v-for="item in lists"
+          :key="item.name"
+          :label="item.name"
+          :value="item.name">
           </el-option>
         </el-select>
       </el-form-item>

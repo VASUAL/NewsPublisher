@@ -3,8 +3,7 @@
   <div class="divF7">
     <img src="../assets/photo/logo.png" alt="" class="img1">
     <router-link to="/" class="link1">首页</router-link>
-    <router-link to="/about" class="link2">关于本站</router-link>
-    <router-link to="/adminLogin" class="link3">管理员</router-link>
+    <router-link to="/adminLogin" class="link3">记者登录</router-link>
   </div>
 
 </template>
@@ -23,9 +22,6 @@ export default {
   position: absolute;height: 65%;top: 50%;transform: translate(-50%,-50%);left: 50%;
 }
 .link1{
-  text-decoration: none;position: absolute;left: 75%;top: 50%;transform: translate(-50%,-50%);color: black;font-size: 15px;
-}
-.link2{
   text-decoration: none;position: absolute;left: 82%;top: 50%;transform: translate(-50%,-50%);color: black;font-size: 15px;
 }
 .link3{

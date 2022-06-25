@@ -10,26 +10,6 @@
         <el-icon><user /></el-icon>
         <span>个人信息</span>
       </el-menu-item>
-      <el-menu-item index="2" @click="$router.push('/myComment')">
-        <el-icon><data-line /></el-icon>
-        <span>我的评论</span>
-      </el-menu-item>
-      <el-menu-item index="3" @click="$router.push('/myCollect')">
-        <el-icon><collection-tag /></el-icon>
-        <span>我的收藏</span>
-      </el-menu-item>
-      <el-menu-item index="4" @click="$router.push('/myFocus')">
-        <el-icon><finished /></el-icon>
-        <span>我的关注</span>
-      </el-menu-item>
-      <el-sub-menu index="5">
-        <template #title>
-          <el-icon><message-box /></el-icon>
-          <span>我的信箱</span>
-        </template>
-        <el-menu-item index="5-1" class="menu" @click="$router.push('/myMessageOfNotRead')">未读私信</el-menu-item>
-        <el-menu-item index="5-2" class="menu" @click="$router.push('/myMessageOfReaded')">已读私信</el-menu-item>
-      </el-sub-menu>
       <el-menu-item index="6" @click="$router.push('/search')">
         <el-icon><reading /></el-icon>
         <span>搜索记录</span>

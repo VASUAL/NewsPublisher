@@ -12,11 +12,6 @@ const routes = [
         component: () => import('../layout/AdminLogin')
     },
     {
-        path: '/about',
-        name: 'About',
-        component: () => import('../layout/About')
-    },
-    {
         path: '/adminHome',
         name: 'AdminHome',
         component: () => import('../layout/AdminHome'),
@@ -37,39 +32,9 @@ const routes = [
                 component: () => import('../views/admin/PublishNews')
             },
             {
-                path: '/publishLog',
-                name: 'PublishLog',
-                component: () => import('../views/admin/PublishLog')
-            },
-            {
-                path: '/newsListForFirst',
-                name: 'NewsListForFirst',
-                component: () => import('../views/admin/NewsListForFirst')
-            },
-            {
                 path: '/newsListForNotFirst',
                 name: 'NewsListForNotFirst',
                 component: () => import('../views/admin/NewsListForNotFirst')
-            },
-            {
-                path: '/logList',
-                name: 'LogList',
-                component: () => import('../views/admin/LogList')
-            },
-            {
-                path: '/freeType',
-                name: 'FreeType',
-                component: () => import('../views/admin/FreeType')
-            },
-            {
-                path: '/fixedType',
-                name: 'FixedType',
-                component: () => import('../views/admin/FixedType')
-            },
-            {
-                path: '/broadcastManage',
-                name: 'BroadcastManage',
-                component: () => import('../views/admin/BroadcastManage')
             }
         ]
     },
@@ -106,19 +71,9 @@ const routes = [
         component: () => import('../layout/SearchResult')
     },
     {
-        path: '/allType',
-        name: 'AllType',
-        component: () => import('../layout/AllType')
-    },
-    {
         path: '/finishUserInfo',
         name: 'FinishUserInfo',
         component: () => import('../layout/FinishUserInfo')
-    },
-    {
-        path: '/firstNews',
-        name: 'FirstNews',
-        component: () => import('../layout/FirstNews')
     },
     {
         path: '/hotNews',
@@ -154,31 +109,6 @@ const routes = [
                 path: '/search',
                 name: 'Search',
                 component: () => import('../views/user/Search')
-            },
-            {
-                path: '/myMessageOfReaded',
-                name: 'MyMessageOfReaded',
-                component: () => import('../views/user/MyMessageOfReaded')
-            },
-            {
-                path: '/myMessageOfNotRead',
-                name: 'MyMessageOfNotRead',
-                component: () => import('../views/user/MyMessageOfNotRead')
-            },
-            {
-                path: '/myFocus',
-                name: 'MyFocus',
-                component: () => import('../views/user/MyFocus')
-            },
-            {
-                path: '/myComment',
-                name: 'MyComment',
-                component: () => import('../views/user/MyComment')
-            },
-            {
-                path: '/myCollect',
-                name: 'MyCollect',
-                component: () => import('../views/user/MyCollect')
             },
             {
                 path: '/requestToAdmin',

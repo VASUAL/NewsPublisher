@@ -1,4 +1,4 @@
-package com.newspublisher.commom;
+package com.newspublisher.common;
 
 /**
  * Author:Wonkey
@@ -27,10 +27,9 @@ public class Result<T>{
         return data;
     }
     public void setData(T data){
-        this.data=dataa;
+        this.data=data;
     }
     public Result(){
-
     }
     public Result(T data){
         this.data=data;

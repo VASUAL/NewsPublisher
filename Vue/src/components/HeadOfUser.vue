@@ -71,10 +71,10 @@ export default {
   height: 50px;width: 100%;border-bottom: 1.5px #f0f0f0 solid;position: absolute;margin-top: 0;
 }
 .img1{
-  position: absolute;height: 65%;top: 50%;transform: translate(-50%,-50%);left: 10%;
+  position: absolute;height: 65%;top: 50%;transform: translate(-50%,-50%);left: 14%;
 }
 .p1{
-  text-decoration: none;position: absolute;left: 26%;top: 50%;transform: translate(-50%, -50%);color: #409eff;font-size: 23px;
+  text-decoration: none;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);color: #409eff;font-size: 23px;
 }
 .el1{
   position: absolute;transform: translate(-50%,-50%);left: 80%;top: 50%;font-size: 16px;

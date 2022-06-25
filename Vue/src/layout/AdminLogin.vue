@@ -2,7 +2,7 @@
   <!--头部-->
   <HeadOfWelcome/>
   <div class="divFirst">
-    <p class="p1">管理员登录</p>
+    <p class="p1">记者登录</p>
     <div class="div2">
       <el-form
           ref="ruleForm"
@@ -113,7 +113,7 @@ export default {
           }else if (role===0||role===3) {
             ElMessage({    //消息提示
               type: "warning",
-              message: "您不是管理员"
+              message: "您不是记者"
             })
           }else {
             ElMessage({    //消息提示

@@ -6,8 +6,6 @@
     <router-link to="/" class="l1">首页</router-link>
     <router-link to="/latestNews" class="l2">最新</router-link>
     <router-link to="/hotNews" class="l3">热门</router-link>
-    <router-link to="/firstNews" class="l4">置顶</router-link>
-    <router-link to="/allType" class="l5">全部板块</router-link>
   </div>
   <!--中间部分-->
   <div class="divS">
@@ -50,7 +48,7 @@
       </el-table-column>
     </el-table>
     <div class="divT">
-      <span @click="$router.push({path: '/typeContent',query: {typeName: '河南新闻'}})" class="sp1">江苏新闻</span>
+      <span @click="$router.push({path: '/typeContent',query: {typeName: '江苏新闻'}})" class="sp1">江苏新闻</span>
     </div>
     <el-divider>
       <el-icon><star-filled /></el-icon>
@@ -69,7 +67,7 @@
       </el-table-column>
     </el-table>
     <div class="divT">
-      <span @click="$router.push({path: '/typeContent',query: {typeName: '郑州新闻'}})" class="sp1">扬州大事</span>
+      <span @click="$router.push({path: '/typeContent',query: {typeName: '扬州大事'}})" class="sp1">扬州大事</span>
     </div>
     <el-divider>
       <el-icon><star-filled /></el-icon>
@@ -152,18 +150,18 @@ export default {
         this.tableDataForChinaNews = res.data
       })
     },
-    //加载河南新闻
+    //加载江苏新闻
     loadDataForHenanNews() {
-      request.post("/news/getNewsByNewsType","河南新闻").then(res =>{
+      request.post("/news/getNewsByNewsType","江苏新闻").then(res =>{
         for (let i=0;i<res.data.length;i++) {
           res.data[i].date = moment(res.data[i].date).format("YYYY-MM-DD")
         }
         this.tableDataForHenanNews = res.data
       })
     },
-    //加载郑州新闻
+    //加载扬州大事
     loadDataForZZNews() {
-      request.post("/news/getNewsByNewsType","郑州新闻").then(res =>{
+      request.post("/news/getNewsByNewsType","扬州大事").then(res =>{
         for (let i=0;i<res.data.length;i++) {
           res.data[i].date = moment(res.data[i].date).format("YYYY-MM-DD")
         }
@@ -192,15 +190,9 @@ export default {
   position: absolute;transform: translate(-50%,-50%);left: 21%;top: 50%;font-size: 17px;color:#409eff;
 }
 .l2{
-  position: absolute;transform: translate(-50%,-50%);left: 35.25%;top: 50%;color: black;font-size: 17px;
-}
-.l3{
   position: absolute;transform: translate(-50%,-50%);left: 49.5%;top: 50%;color: black;font-size: 17px;
 }
-.l4{
-  position: absolute;transform: translate(-50%,-50%);left: 63.75%;top: 50%;color: black;font-size: 17px;
-}
-.l5{
+.l3{
   position: absolute;transform: translate(-50%,-50%);left: 78%;top: 50%;color: black;font-size: 17px;
 }
 .divS{

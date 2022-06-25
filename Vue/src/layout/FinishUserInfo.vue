@@ -33,7 +33,6 @@
         </el-form-item>
         <el-form-item label="地区" prop="area">
           <el-select v-model="ruleForm.area" placeholder="请选择省份" class="el3">
-            <el-option label="河南省" value="河南省"></el-option>
             <el-option label="北京市" value="北京市"></el-option>
             <el-option label="上海市" value="上海市"></el-option>
             <el-option label="天津市" value="天津市"></el-option>
@@ -55,6 +54,7 @@
             <el-option label="海南省" value="海南省"></el-option>
             <el-option label="四川省" value="四川省"></el-option>
             <el-option label="云南省" value="云南省"></el-option>
+            <el-option label="河南省" value="河南省"></el-option>
             <el-option label="贵州省" value="贵州省"></el-option>
             <el-option label="青海省" value="青海省"></el-option>
             <el-option label="甘肃省" value="甘肃省"></el-option>

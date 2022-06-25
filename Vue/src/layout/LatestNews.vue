@@ -6,8 +6,6 @@
     <router-link to="/" class="l1">首页</router-link>
     <router-link to="/latestNews" class="l2">最新</router-link>
     <router-link to="/hotNews" class="l3">热门</router-link>
-    <router-link to="/firstNews" class="l4">置顶</router-link>
-    <router-link to="/allType" class="l5">全部板块</router-link>
   </div>
   <!--中间部分-->
   <div class="dS">
@@ -79,16 +77,10 @@ export default {
   position: absolute;transform: translate(-50%,-50%);left: 21%;top: 50%;font-size: 17px;color:black;
 }
 .l2{
-  position: absolute;transform: translate(-50%,-50%);left: 35.25%;top: 50%;color: #409eff;font-size: 17px;
+  position: absolute;transform: translate(-50%,-50%);left: 49.5%;top: 50%;color: #409eff;font-size: 17px;
 }
 .l3{
-  position: absolute;transform: translate(-50%,-50%);left: 49.5%;top: 50%;color: black;font-size: 17px;
-}
-.l4{
-  position: absolute;transform: translate(-50%,-50%);left: 63.75%;top: 50%;color: black;font-size: 17px;
-}
-.l5{
-  position: absolute;transform: translate(-50%,-50%);left: 78%;top: 50%;color:black;font-size: 17px;
+  position: absolute;transform: translate(-50%,-50%);left: 78%;top: 50%;color: black;font-size: 17px;
 }
 .dS{
   background: white;width: 60%;height: auto;position: absolute;left: 20%;margin-top: 120px;box-shadow: 0 0 3px 3px #f3f3f3;

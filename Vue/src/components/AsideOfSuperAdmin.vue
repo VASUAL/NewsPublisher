@@ -11,8 +11,8 @@
           <el-icon><user /></el-icon>
           <span>权限管理</span>
         </template>
-        <el-menu-item index="1-1" class="menu" @click="$router.push('/superAdminHome')">管理员列表</el-menu-item>
-        <el-menu-item index="1-2" class="menu" @click="$router.push('/adminRequest')">管理员申请</el-menu-item>
+        <el-menu-item index="1-1" class="menu" @click="$router.push('/superAdminHome')">记者列表</el-menu-item>
+        <el-menu-item index="1-2" class="menu" @click="$router.push('/adminRequest')">记者申请</el-menu-item>
       </el-sub-menu>
     </el-menu>
   </div>

@@ -15,8 +15,6 @@
               <td class="td2">{{scope.row.date}}</td>
               <td class="td3"><img src="../assets/photo/click.png" alt="" class="im2"></td>
               <td class="td4">{{scope.row.click}}</td>
-              <td class="td5"><img src="../assets/photo/comment.png" alt="" class="im3"></td>
-              <td class="td6">{{scope.row.comment}}</td>
             </tr>
           </table>
         </template>

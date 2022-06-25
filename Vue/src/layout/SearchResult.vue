@@ -26,7 +26,7 @@
     </div>
     <!--未登录状态显示-->
     <div v-if="notLoginVisible" class="dT">
-      <router-link to="/userLogin" class="r1">登录/注册</router-link>
+      <router-link to="/userLogin" class="r1">登录</router-link>
     </div>
   </div>
   <!--左部列表-->
@@ -37,14 +37,6 @@
           <table class="t1">
             <tr class="tr1" id="row">
               <td colspan="6"><span @click="intoNewsContent(scope.row.id)" class="sp2">[{{scope.row.type}}]&nbsp;{{scope.row.headline}}</span></td>
-            </tr>
-            <tr class="tr2">
-              <td class="td1"><img src="../assets/photo/uptime.png" alt="" class="im4"></td>
-              <td class="td2">{{scope.row.date}}</td>
-              <td class="td3"><img src="../assets/photo/click.png" alt="" class="im5"></td>
-              <td class="td4">{{scope.row.click}}</td>
-              <td class="td5"><img src="../assets/photo/comment.png" alt="" class="im6"></td>
-              <td class="td6">{{scope.row.comment}}</td>
             </tr>
           </table>
         </template>

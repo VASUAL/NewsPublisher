@@ -24,7 +24,7 @@
           <el-button @click="resetForm('ruleForm')" class="el5">重置</el-button>
         </el-form-item>
       </el-form>
-      <router-link to="/adminLogin" class="el6">&lt;&lt;管理员登录入口</router-link>
+      <router-link to="/adminLogin" class="el6">&lt;&lt;记者登录入口</router-link>
     </div>
   </div>
 </template>
